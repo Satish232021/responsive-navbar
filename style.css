@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(./images/obito.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: aliceblue;
+    
+}
+nav li{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+nav a:hover{
+    background-color: rgba(213, 206, 206, 0.575);
+}
+
+nav li:first-child{
+    margin-right: auto;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sidebar{
+    display: flex;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color:rgba(255, 255, 255, 0.411);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.397);
+}
+
+.sidebar li{
+    width: 100%;    
+}
+
+.sidebar a{
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+@media (max-width:650px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+
+@media (min-width:649px){
+    .hideOnLarge{
+        display: none;
+    }
+}
+
+
