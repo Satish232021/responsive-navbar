@@ -36,8 +36,15 @@ nav a{
 
 }
 
-nav a:hover{
+nav a:not(.no-hover):hover {
     background-color: rgba(213, 206, 206, 0.575);
+}
+
+
+
+.hamburger-menu:hover{
+    color: white;
+    box-shadow: 2px 2px 3px black;
 }
 
 nav li:first-child{
@@ -72,6 +79,13 @@ nav li:first-child{
     font-family: 'Times New Roman', Times, serif;
     color: black;
 }
+.hamburger-menu{
+    border: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
 
 @media (max-width:650px){
     .hideOnMobile{
