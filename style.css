@@ -44,7 +44,6 @@ nav a:not(.no-hover):hover {
 
 .hamburger-menu:hover{
     color: white;
-    box-shadow: 2px 2px 3px black;
 }
 
 nav li:first-child{
@@ -83,6 +82,7 @@ nav li:first-child{
     border: 1px solid black;
     padding-top: 5px;
     padding-bottom: 5px;
+    box-shadow: 2px 2px 3px black;
 }
 
 
